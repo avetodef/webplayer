@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+</head>
+
+
+<body>
+<div class="music-container" id="music-container">
+
+    <div class="img-container">
+        <img src="covers/Jungle%20Time.jfif" alt="music-cover" id="cover" style = "border-radius: 5px"/>
+    </div>
+    <div class="music-info">
+        <p id="song-name" class = "song-name"></p>
+        <p id="song-singer" class = "song-singer"></p>
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+        </div>
+    </div>
+    <audio src="music/Jungle%20Time.mp3" id="audio"></audio>
+    <canvas id="visualizer"></canvas>
+    <div class="navigation">
+        <button id="prev" class="action-btn">
+            <img src="icons/prev.png" alt="prev" class = "prev-next-img"/>
+            <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+            <img src = "icons/play.png" alt="play" class = "pause-img" id="pause-img" name = "pause-img" >
+            <i class="fas fa-play"></i>
+        </button>
+        <button id="next" class="action-btn">
+            <img src="icons/next.png" alt="next" class = "prev-next-img"/>
+            <i class="fas fa-forward"></i>
+        </button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<!--bebra i love you-->

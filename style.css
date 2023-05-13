@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background:
+        radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 77%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Arial", monospace;
+    font-weight: bold;
+    margin: 0;
+}
+
+.music-container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: grid;
+    padding: 30px 30px;
+    position: relative;
+    margin: 10px 0;
+    z-index: 10;
+    height: 800px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+}
+
+.img-container img {
+    height: 350px;
+    width: 350px;
+}
+
+/*.music-container.play .img-container img {*/
+/*    animation-play-state: running;*/
+/*}*/
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.action-btn {
+    background-color: #ffffff;
+    border: 0;
+    margin: 0 20px;
+    justify-content: center;
+    align-items: center;
+}
+.action-btn:hover{
+    cursor: pointer;
+}
+
+.prev-next-img{
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.pause-img{
+    width: 35px;
+    height: 35px;
+}
+.music-info {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 15px 25px 0 25px;
+}
+
+.song-name{
+    font-size: 32px;
+    margin: 0;
+}
+
+.song-singer{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 2px;
+    color: #4d4d4d;
+}
+
+.progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #6a49a7;
+    border-radius: 5px;
+    height: 100%;
+    width: 0;
+    transition: width 0.1s linear;
+}
+
+/*bebra i love you*/
